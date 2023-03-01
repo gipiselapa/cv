@@ -17,6 +17,12 @@ html {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: unset;
+}
 
 header {
     width: 100%;
@@ -72,13 +78,14 @@ header nav ul li {
     font-weight: bold;
 }
 .contactModal {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
     left: 0;
     transition: all 0.5s;
     opacity: 0;
@@ -232,7 +239,7 @@ header nav ul li {
 .redes-sociales div {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
 }
 
 .redes-sociales h2 {

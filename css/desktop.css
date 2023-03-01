@@ -3,6 +3,12 @@ header {
     justify-content: center;
     height: 60px;
 }
+header ul {
+    list-style: none;
+}
+header ul a {
+    text-decoration: none;
+}
 
 .inicio {
     grid-template-columns: 1fr 1fr;
@@ -10,7 +16,18 @@ header {
 .inicio img {
     width: 30%;
 }
-
+.inicio button {
+    margin-top: 16px;
+}
+.contactModal form {
+    width: 40%;
+}
+.contactModal form input {
+    width: 70%;
+}
+.contactModal form textarea {
+    width: 70%;
+}
 .datos-personales h2 {
     background-color: #c0dd95;
     width: 100%;
