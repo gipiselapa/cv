@@ -1,0 +1,244 @@
+:root {
+    --azul: #a0d2db;
+    --verde: #a5cc6b;
+    --negro: #0d1b2a;
+    --verdeos: #5F7367;
+    --gris: #CFCFCF;
+    --fuente: 'BioRhyme', serif;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--fuente);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: var(--verdeos);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    column-gap: 60px;
+}
+
+header nav ul li {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    column-gap: 50px;
+    margin-top: 32px;
+}
+
+.inicio img {
+    width: 90%;
+    border-radius: 50%;
+}
+.inicio .contenedor-texto h2 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+.inicio .contenedor-texto p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+.inicio button {
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #a5cc6b;
+    cursor: pointer;
+    font-family: var(--fuente);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.contactModal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.contactModal form {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 48px 16px 24px;
+    border-radius: 25px;
+}
+.contactModal form input {
+    border: none;
+    border-bottom: 2px solid var(--verde);
+    width: 100%;
+}
+.contactModal form input::placeholder {
+    font-size: 1.6rem;
+}
+.contactModal form textarea {
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: var(--fuente);
+    border: 2px solid var(--verde);
+}
+.contactModal form input[type=submit]{
+    border: none;
+    background-color: var(--verde);
+    border-radius: 25px;
+    height: 40px;
+    font-family: var(--fuente);
+    font-weight: bold;
+}
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+.icon-contact {
+    color: var(--verde);
+    font-size: 2.5rem;
+}
+.datos-personales {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 32px;
+}
+
+.datos-personales h2 {
+    font-size: 2.4rem;
+    text-decoration-line: underline;
+}
+.datos-personale-contenedor-texto {
+    text-align: center;
+}
+.datos-personale-contenedor-texto h3 {
+    font-size: 1.8rem;
+}
+
+.datos-personale-contenedor-texto p {
+    font-size: 1.8rem;
+}
+
+/*FORMACION*/
+.formacion-academica {
+    margin-top: 50px;
+}
+
+.formacion-academica h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-size: 3rem;
+    background: #c0dd95;
+    text-align: center;
+}
+
+.formacion-academica-contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.formacion-academica-contenedor-texto h3 {
+    font-size: 2rem;
+}
+
+.formacion-academica-contenedor-texto p {
+    font-size: 2rem;
+}
+
+.experiencia-laboral-referencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 32px;
+}
+
+.experiencia-laboral-referencia p {
+    font-size: 1.5rem;
+}
+
+.experiencia-laboral-referencia h2 {
+    font-size: 3.5rem;
+}
+
+.experiencia-laboral-referencia h3 {
+    font-size: 1.5rem;
+}
+
+.experiencia-laboral-referencia h4 {
+    font-size: 1.5rem;
+}
+
+.contenedor-referencias {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #d6e8bd;
+    margin: 0 50px;
+    border-radius: 35px;
+    padding: 20px;
+}
+
+.contenedor-experiencia-laboral {
+    width: 80%;
+    text-align: center;
+    margin: 0 50px;
+    background-color: #d6e8bd;
+    border-radius: 35px;
+    padding: 20px;
+}
+
+.redes-sociales {
+    background-color: #c0dd95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 24px;
+    padding: 24px 0;
+}
+.redes-sociales div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.redes-sociales h2 {
+    font-size: 3rem;
+}
+
+.redes-sociales i {
+    font-size: 2rem;
+}

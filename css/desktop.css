@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+.inicio {
+    grid-template-columns: 1fr 1fr;
+}
+.inicio img {
+    width: 30%;
+}
+
+.datos-personales h2 {
+    background-color: #c0dd95;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.redes-sociales {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+.redes-sociales div {
+    flex-direction: row;
+}
+
+.redes-sociales h2{
+    grid-area: 1/1/2/2;
+}
